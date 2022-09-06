@@ -16,7 +16,11 @@ body {
   height:60px;
   border:4px solid white;
   border-radius: 50%;
+  margin-left:6rem;
+  margin-top: 2rem;
+  transition: .15s ease-out;
  }
+
 
 
 .card{
@@ -29,7 +33,9 @@ text-align: left;
 box-shadow: 0 20px 30px #f9f9f9;
 border-radius: 30px;
 overflow: hidden;
-
+margin-left:20px;
+transform: rotate(-6deg);
+transition: .15s ease-out;
 }
 
 .text{
@@ -44,7 +50,15 @@ overflow: hidden;
    background: rgb(92, 191, 187);
    background: linear-gradient(90deg, rgba(92, 191, 187, 1) 35%, rgba(116, 214, 144, 1) 66%);
    display: flex;
-   
+   justify-content: left; 
+     gap:1rem;
  }
 
 
+.card:hover{
+  transform: rotate(0deg);
+}
+
+.card:hover img{
+  transform: scale(1.1);
+}
